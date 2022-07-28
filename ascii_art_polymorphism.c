@@ -32,15 +32,7 @@ int main() {
     printf("\n\n");
 
 
-    /* Planet specs */
 
-    /* proposed base struct
-    * Orbit time
-    * Day length 
-    * Current speed
-    * Mass
-    * Atmosphere type
-    */
    
    return 0;
 }
