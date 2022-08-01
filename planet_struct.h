@@ -1,14 +1,16 @@
-
+#ifndef PLANET_STRUCT_H
+#define PLANET_STRUCT_H
 // func pointer
 
-typedef void (*orbit_time_ptr)(void*); 
+typedef void (*orbit_time_ptr)(void); 
 
-typedef struct {
-    
-    int* dayLength;
-    int* currentSpeed;
-    int* objectMass;
-    char* atmosphereType;
+struct planet_s{
+    int dayLength;
+    int currentSpeed;
+    int objectSize;
+    char atmosphereType;
     orbit_time_ptr orbitTimeFunc;  // function which can be overwritten
-} planet_t; 
+    // another function pointer -> draw planet
+}; 
 
+#endif

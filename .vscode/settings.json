@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "planet.h": "c"
+        "planet.h": "c",
+        "earth_struct.h": "c",
+        "earth.h": "c",
+        "planet_struct.h": "c",
+        "stdio.h": "c",
+        "planet_factory.h": "c",
+        "stdlib.h": "c"
     }
 }
