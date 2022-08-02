@@ -31,13 +31,14 @@ static void earth_draw(void) // private to the file
     printf("\n\n");
 }
 
-void earth_constructor(earth_t earth)
+static void earth_orbit_time(void)
 {
-    planet_constructor((planet_t)earth, earth_draw);  // & must be included as the "->" derefences the memory its pointing to, so the address of that must be provided
-    //earth->planet.currentSpeed = 67000; // mph
-    //earth->planet.dayLength = 24; // hrs
-    //earth->planet.objectSize = 0;
-    //earth->planet.orbitTimeFunc = draw;
+    printf("Earth orbit time is 1 year - 365days\n");
+}
+
+void earth_constructor(earth_t earth, int day_length, int current_speed)
+{
+    planet_constructor((planet_t)earth, day_length, current_speed, earth_orbit_time, earth_draw);  // & must be included as the "->" derefences the memory its pointing to, so the address of that must be provided
 }
 // memory destructor
 
